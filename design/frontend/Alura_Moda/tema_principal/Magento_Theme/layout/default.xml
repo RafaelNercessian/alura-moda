@@ -13,4 +13,10 @@
            <argument name="logo_file" xsi:type="string">images/logo.png</argument>
        </arguments>
    </referenceBlock>
+
+    <referenceContainer name="header.panel" remove="true" />
+
+    <referenceContainer name="header-wrapper">
+        <container name="busca.carrinho.signin" htmlTag="div" htmlClass="busca-carrinho-signin" />
+    </referenceContainer>
 </page>
