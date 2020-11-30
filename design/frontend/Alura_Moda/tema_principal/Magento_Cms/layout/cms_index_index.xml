@@ -15,5 +15,19 @@
                 <argument xsi:type="number">2</argument>
             </action>
         </block>
+        <container name="container.categorias" htmlTag="section" htmlClass="container-categorias">
+            <block class="Magento\Cms\Block\Block" as="categoria_feminina" after="product_slider">
+                <arguments>
+                    <argument name="block_id" xsi:type="number">1</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" as="categoria_masculina" after="categoria_feminina">
+                <arguments>
+                    <argument name="block_id" xsi:type="number">2</argument>
+                </arguments>
+            </block>
+        </container>
     </referenceContainer>
+
+    <referenceContainer name="main" remove="true" />
 </page>
